@@ -5,7 +5,10 @@
 #
 from unicrypto import hashlib
 from unicrypto import hmac
-from unicrypto.symmetric import RC4, AES, MODE_CBC, DES, expand_DES_key
+from unicrypto.symmetric import MODE_CBC, expand_DES_key
+from unicrypto.backends.pure.AES import AES
+from unicrypto.backends.pure.DES import DES
+from unicrypto.backends.pure.RC4 import RC4
 
 #####
 import io
