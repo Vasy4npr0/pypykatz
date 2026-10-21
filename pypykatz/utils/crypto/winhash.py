@@ -4,7 +4,8 @@
 #  Tamas Jos (@skelsec)
 #
 
-from unicrypto.symmetric import DES, expand_DES_key
+from unicrypto.symmetric import expand_DES_key
+from unicrypto.backends.pure.DES import DES
 from unicrypto.pbkdf2 import pbkdf2
 from unicrypto.hashlib import md4 as MD4
 from unicrypto.hashlib import md5 as MD5
