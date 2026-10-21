@@ -8,7 +8,9 @@
 import traceback
 from pypykatz import logger
 from pypykatz.commons.common import hexdump
-from unicrypto.symmetric import TDES, AES, MODE_CFB, MODE_CBC
+from unicrypto.symmetric import MODE_CFB, MODE_CBC
+from unicrypto.backends.pure.AES import AES
+from unicrypto.backends.pure.TDES import TDES
 from pypykatz.lsadecryptor.package_commons import PackageDecryptor
 
 class LsaDecryptor_NT6(PackageDecryptor):
