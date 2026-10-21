@@ -1,5 +1,5 @@
 from unicrypto.symmetric import expand_DES_key, MODE_CBC
-from unicrypto.symmetric import DES
+from unicrypto.backends.pure.DES import DES
 
 # https://github.com/frizb/PasswordDecrypts
 def vncdecrypt(enc_pw: str or bytes):
