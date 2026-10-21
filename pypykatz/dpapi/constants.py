@@ -6,8 +6,9 @@ import enum
 
 from unicrypto.hashlib import sha1 as SHA1
 from unicrypto.hashlib import sha512 as SHA512
-from unicrypto.symmetric import AES, MODE_CBC
-from unicrypto.symmetric import TDES as DES3
+from unicrypto.symmetric import MODE_CBC
+from unicrypto.backends.pure.AES import AES
+from unicrypto.backends.pure.TDES import TDES as DES3
 
 
 # Algorithm classes
