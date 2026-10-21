@@ -8,8 +8,8 @@
 #
 # TODO: the script is missing the trendmicro_PWDDecrypt function, which doesn't seem to be in use anymore
 
-
-from unicrypto.symmetric import AES, cipherMODE
+from unicrypto.symmetric import cipherMODE
+from unicrypto.backends.pure.AES import AES
 import array
 import os
 import re
