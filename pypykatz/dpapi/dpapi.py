@@ -29,7 +29,8 @@ from pypykatz.dpapi.finders.ngc import NGCProtectorFinder, NGCProtector
 from pypykatz.dpapi.finders.cryptokeys import CryptoKeysFinder
 
 from unicrypto.hashlib import md4 as MD4
-from unicrypto.symmetric import AES, MODE_GCM, MODE_CBC
+from unicrypto.symmetric import MODE_GCM, MODE_CBC
+from unicrypto.backends.pure.AES import AES
 from winacl.dtyp.wcee.pvkfile import PVKFile
 from winacl.dtyp.wcee.cryptoapikey import CryptoAPIKeyFile, CryptoAPIKeyProperties
 
