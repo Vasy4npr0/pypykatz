@@ -1,6 +1,7 @@
 
 import base64
-from unicrypto.symmetric import AES, MODE_CBC
+from unicrypto.symmetric import MODE_CBC
+from unicrypto.backends.pure.AES import AES
 from unicrypto.backends.pure.padding.pkcs7 import unpad as pkcs7_unpad
 
 
