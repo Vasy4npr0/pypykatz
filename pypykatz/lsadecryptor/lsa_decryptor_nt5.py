@@ -4,7 +4,7 @@
 #  Tamas Jos (@skelsec)
 #
 
-from unicrypto.symmetric import RC4
+from unicrypto.backends.pure.RC4 import RC4
 from pypykatz.lsadecryptor.package_commons import PackageDecryptor
 from pypykatz.commons.win_datatypes import LONG
 
