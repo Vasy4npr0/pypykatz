@@ -6,7 +6,10 @@
 import hashlib
 import hmac
 from pypykatz.registry.sam.structures import *
-from unicrypto.symmetric import RC4, DES, AES, expand_DES_key, MODE_CBC
+from unicrypto.symmetric import MODE_CBC, expand_DES_key
+from unicrypto.backends.pure.AES import AES
+from unicrypto.backends.pure.DES import DES
+from unicrypto.backends.pure.RC4 import RC4
 
 
 #####
